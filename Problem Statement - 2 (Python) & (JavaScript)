@@ -1,0 +1,14 @@
+def validate_triangle(x,y,z):
+    if x+y>z or y+z>x or z+x>y:
+        return "Valid Triangle"
+    else:
+        return "Invalid Triangle"
+    
+def validate_rectangle(a,b,c,d):
+    if a==c and b==d:
+        return "Valid Rectangle"
+    else:
+        return "Invalid Rectangle"
+    
+validate_triangle(3,4,5)
+validate_rectangle(2,4,2,4)    
