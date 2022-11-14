@@ -1,0 +1,11 @@
+def special_sort(length,given_list):
+    for i in range(len(given_list)):
+        for j in range(i,len(given_list)):
+            if ord(given_list[i][-2])>ord(given_list[j][-2]):
+                given_list[i],given_list[j]=given_list[j],given_list[i]
+    return(given_list)
+    
+length=len(given_list)
+given_list=list(map(str,input("Input the string seperated by space : ").split()))
+
+special_sort(length,given_list)
